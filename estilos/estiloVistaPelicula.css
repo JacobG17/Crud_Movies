@@ -1,0 +1,181 @@
+.peliculainfo{
+    position: relative;
+    width: 100%;
+    height: 100vh; /* 100% del viewport height */
+    margin-bottom: 100px;
+}
+
+
+.inner-div {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: rgb(6,13,23);
+}
+
+.poster{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    color: black;
+    background-color: rgb(239, 164, 33);
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; /* Para ajustar la imagen y cubrir todo el espacio del div sin deformarla */
+}
+
+.poster span {
+    position: absolute;
+    top: 180px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.titulo
+{
+    position: absolute;
+    top: 50px;
+    left: 400px;
+}
+
+.titulo input {
+  font-size: 25px;
+  width: 450px;
+  background-color: lightgray;
+  border-radius: 10px;
+  color: darkblue;
+  padding: 5px;
+  border: none;
+}
+
+
+.fecha_estreno
+{
+    position: absolute;
+    top: 105px;
+    left: 400px;
+}
+
+.fecha-input {
+    position: absolute;
+    top: 115px;
+    left: 400px;
+}
+
+.fecha-input label {
+  margin-right: 10px;
+}
+
+.fecha-input input[type="date"] {
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  width: 200px;
+}
+
+.director
+{
+    position: absolute;
+    top: 105px;
+    left: 650px;
+}
+
+.director input {
+    position: absolute;
+    font-size: 20px;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 10px;
+    color: darkblue;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    top: 70px;
+    left: -250px;
+
+}
+
+.genero
+{
+    position: absolute;
+    top: 180px;
+    left: 400px;
+}
+
+.genero input {
+    position: absolute;
+    font-size: 20px;
+    width:200px;
+    background-color: lightgray;
+    border-radius: 10px;
+    color: darkblue;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+}
+
+.reseña
+{
+    position: absolute;
+    top: 250px;
+    left: 400px;
+}
+
+.reseña textarea
+{
+    position: absolute;
+    font-size: 20px;
+    width: 500px;
+    height: 200px;
+    background-color: lightgray;
+    border-radius: 10px;
+    color: darkblue;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+}
+
+.agregar{
+    position: absolute;
+    top: 450px;
+    left: 950px;
+}
+.agregar input[type="submit"]{
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(239, 164, 33);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
+    border: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.agregar input[type="submit"]:hover {
+    /* Estilos para el estado hover del input */
+    background-color: rgb(232, 181, 92);
+}

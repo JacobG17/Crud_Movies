@@ -1,0 +1,280 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+}
+
+body{
+  background-color: rgb(6,13,23);
+  color: #d5d5d5;
+}
+
+header{
+  display: flex;
+	width: 100%;
+	height: 90px;
+	background-color: rgb(6,13,23);
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.logo{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+}
+
+.logo a {
+  float: left;
+  display: flex;
+  align-items: center;
+  color: rgb(243, 198, 65);
+}
+
+.logo i {
+  margin-right: 15px;
+  color: rgb(243, 198, 65);
+}
+
+.nav-search{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+
+.searchbar{
+  text-align: start;
+  width: 100%;
+  padding: 0;
+  height: 52px;
+  z-index: 10;
+}
+
+.buscador{
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 7px;
+  padding: 10px;
+  background-color: #3e3e3e;
+  border-radius: 10px;
+}
+
+#navBuscador{
+  border: none;
+  background-color: transparent;
+  color: #d5d5d5;
+  width: 100%;
+  margin-left: 10px;
+  font-size: 18px;
+  margin-top: 5px;
+  outline: none;
+}
+
+.menu{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.boton-menu{
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  top: 5px;
+  left: 40%;
+  background-color: rgb(6,13,23);
+  border: none;
+  color: #878585;
+}
+
+.boton-menu:hover {
+  cursor: pointer;
+}
+
+.barra_filtros{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding-left: 64px;
+  padding-right: 64px;
+}
+
+.ver{
+  display: flex;
+  position: relative;
+  margin-inline-end: 10px;
+  font-size: 24px;
+  width: 90px;
+}
+
+.ver a{
+  color: #d5d5d5;
+}
+
+.linea-debajo {
+  border-bottom: 5px solid rgb(243, 198, 65);
+  margin-bottom: 17px;
+}
+
+
+.iconoFiltro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px; 
+}
+
+.iconoFiltro i{
+  margin-right: 10px;
+  width: 10px;
+  height: 10px;
+  
+}
+
+.iconoFiltro p{
+  font-size: 25px;
+  margin-left: 10px;
+  margin-bottom: 17px;
+}
+
+.filtroDirector{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; 
+}
+
+.selectbox{
+  border: none;
+  color: #d5d5d5;
+  appearance: none;
+  margin-left: 15px;
+  width: 100%;
+  background-color: rgb(6,13,23);
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+
+.filtroDirector .iconSelect{
+  color: #d5d5d5;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+.filtroCategoria{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px; 
+}
+
+.selectbox{
+  border: none;
+  color: #d5d5d5;
+  appearance: none;
+  margin-left: 15px;
+  width: 100%;
+  background-color: rgb(6,13,23);
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+
+.filtroCategoria .iconSelect{
+  color: #d5d5d5;
+  margin-bottom: 17px;
+  margin-left: 5px;
+}
+
+.reiniciarFiltros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.btnReiniciar{
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  margin-bottom: 14px;
+  background-color: rgb(12, 21, 32);
+  color: #3e3e3e;
+  border: none;
+  font-size: 15px;
+  
+}
+
+.btnReiniciar:hover {
+  transition: background-color 0.3s;
+  background-color: rgb(17, 30, 46);
+}
+
+#despliegueMenu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  background-color: rgb(12, 21, 32);
+  z-index: 999;
+  padding: 5px;
+  margin-right: 150px; 
+  width: 200px;
+  border-radius: 10px;
+  left: 84%;
+  top: 70px;
+  transition: max-height 0.3s ease-out;
+}
+
+
+#despliegueMenu li {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: rgb(13, 25, 40);
+  font-size: 20px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+#despliegueMenu li a {
+  
+  color: #d5d5d5; /* Cambia "blue" por el color deseado */
+  text-decoration: none; /* Opcional: eliminar subrayado */
+}
+
+#despliegueMenu li:hover {
+  background-color: rgb(15, 29, 45);
+}
+
+
+#Menu{
+  cursor: pointer;
+}
+
+iframe {
+  border: none; /* Elimina el borde por completo */
+  /* border: 0; */ /* Otra opción para eliminar el borde */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas con ancho igual */
+  grid-gap: 20px; /* Espacio entre las cuadrículas */
+}
+
+.grid-item {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+

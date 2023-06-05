@@ -7,18 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../estilos/style.css">
-    <script src="../funciones/index.js"></script>
+    <link rel="stylesheet" href="../estilos/catalogo.css">
+    <script src="../funciones/filtros.js"></script>
     <!-- FONT AWESOEM -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/a4fef512d9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <?php include '../componentes/header.php'; ?>
-
     <?php include '../componentes/filtros.php'; ?>
-    
-
+    <?php include '../vistas/catalogoPeliculas.php'; ?>
 </body>
 
 </html>

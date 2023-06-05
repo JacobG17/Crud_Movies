@@ -1,3 +1,6 @@
+<?php 
+    include ('../scrips/llenarFiltro.php');
+?>
 <div class="barra_filtros">
     <div class="ver">
         <a href="index.php" class="linea-debajo">Ver todo</a>
@@ -9,9 +12,9 @@
     <div class="filtroDirector">
         <select id="selectDirector" class="selectbox" >
             <option value="Director">Director</option>
-            <option value="opcion1">Opción 1</option>
-            <option value="opcion2">Opción 2</option>
-            <option value="opcion3">Opción 3</option>
+            <?php  
+                filtroDirectores();
+            ?>
         </select>   
         <div class="iconSelect">
             <i class="fa-solid fa-angle-down fa-xl"></i>
@@ -20,9 +23,9 @@
     <div class="filtroCategoria">
         <select id="selectCategoria" class="selectbox" >
             <option value="Categoria" Selected>Categoria</option>
-            <option value="opcion1">Opción 1</option>
-            <option value="opcion2">Opción 2</option>
-            <option value="opcion3">Opción 3</option>
+            <?php  
+                filtroGeneros();
+            ?>
         </select>   
         <div class="iconSelect">
             <i class="fa-solid fa-angle-down fa-xl"></i>

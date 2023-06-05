@@ -21,9 +21,8 @@
     <form action="../scrips/insert.php" method="post" enctype="multipart/form-data">
         <div class="peliculainfo">
             <div class="inner-div">
-                <div class="poster" onclick="agregarImagen()">
-                    <span>Haz clic para agregar poster de la película</span>
-                    <input type="file" name="poster" id="inputImagen" >
+                <div class="poster" id="posterContainer">
+                    <span>Agregue el poster de la pelicula</span>
                 </div>
                 <div class="titulo">
                     <input type="text" name="titulo" placeholder="Título de la película">
@@ -43,6 +42,9 @@
                 </div>
                 <div class="agregar">
                     <input type="submit" name="submit" value="Agregar"/>
+                </div>
+                <div class = "agregar_poster">
+                    <input type="file" name="poster" id="inputImagen" onchange="mostrarImagen()"/>
                 </div>
             </div>
         </div>

@@ -7,7 +7,9 @@ include ('../scrips/cargarPeliculas.php');
         <div class="grid-item">
             <img src="<?php echo $poster; ?>" alt="Imagen">
             <div class="overlay">
-                <button>Editar</button>
+                <a href="updatePelicula.php">
+                    <button class="editar-button" onclick="obtenerDatos(this)">Editar</button>
+                </a>
                 <button>Eliminar</button>
             </div>
         </div>

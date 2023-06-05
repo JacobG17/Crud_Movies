@@ -1,20 +1,22 @@
-function agregarImagen() {
-    const input = document.getElementById('inputImagen');
-    input.click();
+function mostrarImagen() {
+    var input = document.getElementById('inputImagen');
+    var posterContainer = document.getElementById('posterContainer');
 
-    input.addEventListener('change', function() {
-        const file = input.files[0];
-        if (file) {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const imagen = document.createElement('img');
-                imagen.src = e.target.result;
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
 
-                const contenedor = document.querySelector('.poster');
-                contenedor.innerHTML = '';
-                contenedor.appendChild(imagen);
-            }
-            reader.readAsDataURL(file);
-        }
-    });
-}
+      reader.onload = function (e) {
+        var img = document.createElement('img');
+        img.src = e.target.result;
+        img.alt = 'Poster de la película';
+
+        // Eliminar el contenido anterior del div "poster" si lo hubiera
+        posterContainer.innerHTML = '';
+
+        // Agregar la imagen al div "poster"
+        posterContainer.appendChild(img);
+      };
+
+      reader.readAsDataURL(input.files[0]);
+    }
+  }

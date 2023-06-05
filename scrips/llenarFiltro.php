@@ -4,7 +4,7 @@ function filtroDirectores()
 {
     include ('../scrips/conexion.php');
     //Consulta de directores
-    $directores = "SELECT director FROM Peliculas;";
+    $directores = "SELECT DISTINCT director FROM Peliculas ORDER BY director ASC;";
 
     $resultado = $conn->query($directores);
 
@@ -27,7 +27,7 @@ function filtroGeneros()
 {
     include ('../scrips/conexion.php');
     //Consulta de generos
-    $generos = "SELECT genero FROM Peliculas;";
+    $generos = "SELECT DISTINCT genero FROM Peliculas ORDER BY genero ASC;";
     $resultado = $conn->query($generos);
     if ($resultado === false)
     {
